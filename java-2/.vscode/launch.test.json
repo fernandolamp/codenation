@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-2",
+                "projectName": "java-2",
+                "workingDirectory": "c:\\Users\\lampa\\codenation\\java-2",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "java-2",
+                "projectName": "java-2",
+                "workingDirectory": "c:\\Users\\lampa\\codenation\\java-2",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
