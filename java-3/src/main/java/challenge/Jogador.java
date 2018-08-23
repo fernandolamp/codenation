@@ -6,7 +6,7 @@ public class Jogador{
     private Integer id;
     private String nome;
     private String clube;
-    private Double vrRecisao;
+    private double vrRecisao;
     private Integer idade;   
 
     public Jogador(){
@@ -54,13 +54,13 @@ public class Jogador{
     /**
      * @return the vrRecisao
      */
-    public Double getVrRecisao() {
+    public double getVrRecisao() {
         return vrRecisao;
     }
     /**
      * @param vrRecisao the vrRecisao to set
      */
-    public void setVrRecisao(Double vrRecisao) {
+    public void setVrRecisao(double vrRecisao) {
         this.vrRecisao = vrRecisao;
     }
 

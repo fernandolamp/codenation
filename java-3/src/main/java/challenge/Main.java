@@ -3,9 +3,15 @@ package challenge;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 
 public class Main {
 	private List<Jogador> lista = new ArrayList<>();
@@ -61,7 +67,14 @@ public class Main {
 	// Quem são os top 10 jogadores que possuem as maiores cláusulas de rescisão?
 	// (utilize as colunas `full_name` e `eur_release_clause`)
 	public List<String> q4() {
-		return null;
+		List<Jogador> listaTemp = lista;
+		List<String> listaNome = new ArrayList<>();
+		listaTemp.stream().sorted(Comparator.comparingDouble(Jogador::getVrRecisao)).collect(Collectors.toList());
+
+		for (int i = 0; i < 10; i++) {
+			listaNome.add(listaTemp.get(i).getNome()+","+listaTemp.get(i).getVrRecisao());
+		}
+		return listaNome;
 	}
 
 	// Quem são os 10 jogadores mais velhos?
