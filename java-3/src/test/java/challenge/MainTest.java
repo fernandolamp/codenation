@@ -9,12 +9,14 @@ public class MainTest {
 
 	@Test
 	public void q1() throws Exception {
-		assertNotEquals(0, new Main().q1());
+		assertEquals(164, new Main().q1());
+		// assertNotEquals(0, new Main().q1());
 	}
 
 	@Test
 	public void q2() throws Exception {
-		assertNotEquals(0, new Main().q2());
+		//assertNotEquals(0, new Main().q2());
+		assertEquals(647, new Main().q2());
 	}
 
 	@Test

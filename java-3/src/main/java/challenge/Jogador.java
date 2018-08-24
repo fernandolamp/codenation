@@ -8,6 +8,7 @@ public class Jogador{
     private String clube;
     private double vrRecisao;
     private Integer idade;   
+    private String nacionalidade;
 
     public Jogador(){
 
@@ -75,6 +76,20 @@ public class Jogador{
      */
     public Integer getIdade() {
         return idade;
+    }
+
+    /**
+     * @return the nacionalidade
+     */
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    /**
+     * @param nacionalidade the nacionalidade to set
+     */
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
     }
     
 }
